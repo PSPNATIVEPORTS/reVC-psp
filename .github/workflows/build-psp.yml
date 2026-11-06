@@ -1,0 +1,23 @@
+name: Build PSP EBOOT
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: pspdev/pspdev:latest
+    steps:
+      - name: Tools
+        run: apk add --no-cache cmake ninja git
+      - uses: actions/checkout@v4
+      - name: Build
+        run: |
+          psp-cmake -S . -B build-psp -G Ninja -DCMAKE_BUILD_TYPE=Release
+          cmake --build build-psp
+      - uses: actions/upload-artifact@v4
+        with:
+          name: EBOOT
+          path: build-psp/src/EBOOT.PBP
