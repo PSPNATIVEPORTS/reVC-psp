@@ -1,4 +1,4 @@
-# GTA Vice City for PSP (reVC PSP) — V5.0
+# GTA Vice City for PSP (reVC PSP) — V5.5
 
 A native port of GTA Vice City to the Sony PSP: **PSP-2000, PSP-3000, PSP Go and PSP Street (E1000)**.
 
@@ -21,7 +21,7 @@ work this port would not exist.**
 - **PSP-1000:** not supported yet. We are collecting donations to buy a PSP-1000 to test the
   game on it; if you'd like to help, contact us on Instagram or YouTube (@PSPNATIVEPORTS).
 - Your GTA Vice City PC folder (any PC release).
-- From the `release/V5.0` folder of this repository:
+- From the `release/V5.5` folder of this repository:
   - `EBOOT.PBP` (the game for the PSP)
   - `pspconv.exe` (the converter that turns the PC game data into PSP data; Windows)
 - About 450 MB free on the Memory Stick, or about 1.9 GB with the full sound.
